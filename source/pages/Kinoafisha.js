@@ -28,6 +28,11 @@ export const Kinoafisha = () => {
     useEffect(() => {
         _getMoviesByFilter(selectedFilter);
     }, []);
+    
+    // // getDerivedStateFromProps
+    // useEffect(() => {
+    //     // логика
+    // });
 
     const styles = getStyles({
         selectedFilter,
