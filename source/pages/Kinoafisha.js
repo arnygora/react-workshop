@@ -9,6 +9,13 @@ export const Kinoafisha = () => {
         <>
             <div className = 'header'>
                 <div className = 'logo' />
+                <div className = 'filters'>
+                    <div
+                        className = ''
+                        data-name = 'latest'>
+                        <span>Новинки {new Date().getFullYear()}</span>
+                    </div>
+                </div>
             </div>
         </>
     );
