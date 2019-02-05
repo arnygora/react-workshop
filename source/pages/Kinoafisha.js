@@ -9,9 +9,6 @@ export const Kinoafisha = () => {
     const [ selectedFilter, setSelectedFilter ] = useState('upcoming');
     const [ movies, setMovies ] = useState([]);
 
-    // 1. Функцию для обновления фильтра
-    // 2. Получить стили для каждого фильтра
-
     const _setSelectedFilter = (event) => {
         const nextFilter = event.currentTarget.dataset.name;
 
