@@ -4,7 +4,9 @@ import React from 'react';
 export const Kinoafisha = () => {
     return (
         <>
-            <h1 className = 'welcome'>Поехали!</h1>
+            <div className = 'header'>
+                <div className = 'logo' />
+            </div>
         </>
     );
 };
