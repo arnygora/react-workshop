@@ -71,13 +71,14 @@ export const Kinoafisha = () => {
                         className = { styles.upcomingFilter }
                         data-name = 'upcoming'
                         onClick = { (event) => setSelectedFilter(event.currentTarget.dataset.name)
-                        >
+                        }>
                         <span>Скоро в кинотеатрах</span>
                     </div>
                     <div
                         className = { styles.popularFilter }
                         data-name = 'popular'
-                        onClick = { _setSelectedFilter }>
+                        onClick = { (event) => setSelectedFilter(event.currentTarget.dataset.name)
+                        }>
                         <span>В топ-чартах</span>
                     </div>
                 </div>
