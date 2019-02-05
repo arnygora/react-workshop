@@ -17,6 +17,10 @@ export const Kinoafisha = () => {
         console.log('→ nextFilter', nextFilter);
     };
 
+    const styles = getStyles({
+        selectedFilter,
+    });
+
     return (
         <>
             <div className = 'header'>
