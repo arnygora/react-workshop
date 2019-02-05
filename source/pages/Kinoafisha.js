@@ -32,6 +32,18 @@ export const Kinoafisha = () => {
                         onClick = { _setSelectedFilter }>
                         <span>Новинки {new Date().getFullYear()}</span>
                     </div>
+                    <div
+                        className = { styles.upcomingFilter }
+                        data-name = 'upcoming'
+                        onClick = { _setSelectedFilter }>
+                        <span>Скоро в кинотеатрах</span>
+                    </div>
+                    <div
+                        className = { styles.popularFilter }
+                        data-name = 'popular'
+                        onClick = { _setSelectedFilter }>
+                        <span>В топ-чартах</span>
+                    </div>
                 </div>
             </div>
         </>
