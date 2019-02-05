@@ -1,7 +1,9 @@
 // Core
-import React from 'react';
+import React, { useState } from 'react';
 
 export const Kinoafisha = () => {
+    const [ selectedFilter, setSetSelectedFilter ] = useState('upcoming');
+
     return (
         <>
             <div className = 'header'>
