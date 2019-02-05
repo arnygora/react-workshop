@@ -15,12 +15,6 @@ export const Kinoafisha = () => {
         setMovies(movies);
     };
 
-    const _setSelectedFilter = (event) => {
-        const nextFilter = event.currentTarget.dataset.name;
-
-        setSelectedFilter(nextFilter);
-    };
-
     // componentDidMount, componentDidUpdate
     useEffect(() => {
         _getMoviesByFilter(selectedFilter);
