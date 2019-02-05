@@ -35,7 +35,6 @@ export const Kinoafisha = () => {
 
     const moviesJSX = movies;
 
-
     return (
         <>
             <div className = 'header'>
