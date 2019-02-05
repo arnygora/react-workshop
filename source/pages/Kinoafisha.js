@@ -20,8 +20,8 @@ export const Kinoafisha = () => {
     const _setSelectedFilter = (event) => {
         const nextFilter = event.currentTarget.dataset.name;
 
-        // setSelectedFilter(nextFilter);
-        _getMoviesByFilter(nextFilter);
+        setSelectedFilter(nextFilter);
+        // _getMoviesByFilter(nextFilter);
     };
 
     // componentDidMount + componentWillUnmount
