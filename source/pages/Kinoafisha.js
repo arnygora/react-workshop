@@ -8,6 +8,10 @@ export const Kinoafisha = () => {
     // 1. Функцию для обновления фильтра
     // 2. Получить стили для каждого фильтра
 
+    const _setSelectedFilter = (event) => {
+
+    };
+
     return (
         <>
             <div className = 'header'>
@@ -15,7 +19,8 @@ export const Kinoafisha = () => {
                 <div className = 'filters'>
                     <div
                         className = ''
-                        data-name = 'latest'>
+                        data-name = 'latest'
+                        onClick = { _setSelectedFilter }>
                         <span>Новинки {new Date().getFullYear()}</span>
                     </div>
                 </div>
