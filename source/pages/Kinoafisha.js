@@ -33,6 +33,9 @@ export const Kinoafisha = () => {
         selectedFilter,
     });
 
+    const moviesJSX = movies;
+
+
     return (
         <>
             <div className = 'header'>
