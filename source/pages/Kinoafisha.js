@@ -1,6 +1,9 @@
 // Core
 import React, { useState } from 'react';
 
+// Instruments
+import { getStyles } from '../helpers';
+
 export const Kinoafisha = () => {
     const [ selectedFilter, setSelectedFilter ] = useState('upcoming');
     const [ movies, setMovies ] = useState([]);
