@@ -2,5 +2,5 @@
 import React from 'react';
 
 export const Kinoafisha = () => {
-    return 
+    return <h1 className = 'welcome'>Поехали!</h1>;
 }
