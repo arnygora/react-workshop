@@ -29,10 +29,15 @@ export const Kinoafisha = () => {
         _getMoviesByFilter(selectedFilter);
     }, []);
     
-    // // getDerivedStateFromProps
+    // getDerivedStateFromProps
     // useEffect(() => {
-    //     // логика
+    // логика
     // });
+
+    // componentDidUpdate
+    // useEffect(() => {
+        // логика
+    // }, [data]);
 
     const styles = getStyles({
         selectedFilter,
