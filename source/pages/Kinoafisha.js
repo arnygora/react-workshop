@@ -9,7 +9,9 @@ export const Kinoafisha = () => {
     // 2. Получить стили для каждого фильтра
 
     const _setSelectedFilter = (event) => {
+        const nextFilter = event.currentTarget.dataset.name;
 
+        console.log('→ nextFilter', nextFilter);
     };
 
     return (
