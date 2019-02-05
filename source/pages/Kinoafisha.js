@@ -21,6 +21,7 @@ export const Kinoafisha = () => {
         const nextFilter = event.currentTarget.dataset.name;
 
         setSelectedFilter(nextFilter);
+        _getMoviesByFilter(nextFilter);
     };
 
     // componentDidMount + componentWillUnmount
