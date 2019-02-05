@@ -9,10 +9,10 @@ export const Kinoafisha = () => {
     const [ selectedFilter, setSelectedFilter ] = useState('upcoming');
     const [ movies, setMovies ] = useState([]);
 
-    console.log('→ movies', movies);
-
     const _getMoviesByFilter = async (nextFilter) => {
         const movies = await api.getMovies(nextFilter);
+
+        console.log('→ movies', movies);
 
         setMovies(movies);
     };
@@ -28,7 +28,7 @@ export const Kinoafisha = () => {
     useEffect(() => {
         _getMoviesByFilter(selectedFilter);
     }, []);
-    
+
     // getDerivedStateFromProps
     // useEffect(() => {
     // логика
