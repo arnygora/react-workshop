@@ -12,8 +12,6 @@ export const Kinoafisha = () => {
     const _getMoviesByFilter = async (nextFilter) => {
         const movies = await api.getMovies(nextFilter);
 
-        console.log('→ movies', movies);
-
         setMovies(movies);
     };
 
@@ -21,7 +19,6 @@ export const Kinoafisha = () => {
         const nextFilter = event.currentTarget.dataset.name;
 
         setSelectedFilter(nextFilter);
-        // _getMoviesByFilter(nextFilter);
     };
 
     // componentDidMount + componentWillUnmount
