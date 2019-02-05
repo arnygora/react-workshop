@@ -15,7 +15,7 @@ export const Kinoafisha = () => {
         const movies = await api.getMovies(nextFilter);
 
         setMovies(movies);
-    }
+    };
 
     const _setSelectedFilter = (event) => {
         const nextFilter = event.currentTarget.dataset.name;
@@ -23,6 +23,10 @@ export const Kinoafisha = () => {
         setSelectedFilter(nextFilter);
     };
 
+    // componentDidMount + componentWillUnmount
+    useEffect(() => {
+        _getMoviesByFilter(selectedFilter);
+    }, []);
 
     const styles = getStyles({
         selectedFilter,
