@@ -22,6 +22,7 @@ export const Kinoafisha = () => {
                     <div
                         className = ''
                         data-name = 'latest'
+                        data-year = '2019'
                         onClick = { _setSelectedFilter }>
                         <span>Новинки {new Date().getFullYear()}</span>
                     </div>
