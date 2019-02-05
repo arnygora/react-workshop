@@ -15,10 +15,7 @@ export const Kinoafisha = () => {
         const movies = await api.getMovies(nextFilter);
 
         setMovies(movies);
-
     }
-
-
 
     const _setSelectedFilter = (event) => {
         const nextFilter = event.currentTarget.dataset.name;
