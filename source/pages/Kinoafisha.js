@@ -36,7 +36,7 @@ export const Kinoafisha = () => {
 
     // componentDidUpdate
     // useEffect(() => {
-        // логика
+    // логика
     // }, [data]);
 
     const styles = getStyles({
