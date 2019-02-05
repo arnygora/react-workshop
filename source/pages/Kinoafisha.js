@@ -14,7 +14,7 @@ export const Kinoafisha = () => {
     const _setSelectedFilter = (event) => {
         const nextFilter = event.currentTarget.dataset.name;
 
-        console.log('→ nextFilter', nextFilter);
+        setSelectedFilter(nextFilter);
     };
 
     const styles = getStyles({
