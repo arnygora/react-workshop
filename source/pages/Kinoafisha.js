@@ -63,7 +63,8 @@ export const Kinoafisha = () => {
                     <div
                         className = { styles.latestFilter }
                         data-name = 'latest'
-                        onClick = { _setSelectedFilter }>
+                        onClick = { (event) => setSelectedFilter(event.currentTarget.dataset.name)
+                        }>
                         <span>Новинки {new Date().getFullYear()}</span>
                     </div>
                     <div
