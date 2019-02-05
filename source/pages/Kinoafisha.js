@@ -60,6 +60,7 @@ export const Kinoafisha = () => {
                     </div>
                 </div>
             </div>
+            <div className = 'content'>{moviesJSX}</div>
         </>
     );
 };
