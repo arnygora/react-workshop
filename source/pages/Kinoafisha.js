@@ -70,7 +70,8 @@ export const Kinoafisha = () => {
                     <div
                         className = { styles.upcomingFilter }
                         data-name = 'upcoming'
-                        onClick = { _setSelectedFilter }>
+                        onClick = { (event) => setSelectedFilter(event.currentTarget.dataset.name)
+                        >
                         <span>Скоро в кинотеатрах</span>
                     </div>
                     <div
