@@ -21,7 +21,7 @@ export const Kinoafisha = () => {
         setSelectedFilter(nextFilter);
     };
 
-    // componentDidUpdate
+    // componentDidMount, componentDidUpdate
     useEffect(() => {
         _getMoviesByFilter(selectedFilter);
     }, [ selectedFilter ]);
