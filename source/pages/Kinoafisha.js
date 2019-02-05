@@ -27,7 +27,7 @@ export const Kinoafisha = () => {
                 <div className = 'logo' />
                 <div className = 'filters'>
                     <div
-                        className = ''
+                        className = { styles.latestFilter }
                         data-name = 'latest'
                         onClick = { _setSelectedFilter }>
                         <span>Новинки {new Date().getFullYear()}</span>
