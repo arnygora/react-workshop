@@ -9,11 +9,23 @@ export const Kinoafisha = () => {
     const [ selectedFilter, setSelectedFilter ] = useState('upcoming');
     const [ movies, setMovies ] = useState([]);
 
+    console.log('→ movies', movies);
+
+    const _getMoviesByFilter = async (nextFilter) => {
+        const movies = await api.getMovies(nextFilter);
+
+        setMovies(movies);
+
+    }
+
+
+
     const _setSelectedFilter = (event) => {
         const nextFilter = event.currentTarget.dataset.name;
 
         setSelectedFilter(nextFilter);
     };
+
 
     const styles = getStyles({
         selectedFilter,
