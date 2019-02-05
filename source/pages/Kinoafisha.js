@@ -21,7 +21,7 @@ export const Kinoafisha = () => {
         setSelectedFilter(nextFilter);
     };
 
-    // componentDidMount + componentWillUnmount
+    // componentDidUpdate
     useEffect(() => {
         _getMoviesByFilter(selectedFilter);
     }, [ selectedFilter ]);
@@ -31,10 +31,10 @@ export const Kinoafisha = () => {
     // логика
     // });
 
-    // componentDidUpdate
+    // componentDidMount + componentWillUnmount
     // useEffect(() => {
     // логика
-    // }, [data]);
+    // }, []);
 
     const styles = getStyles({
         selectedFilter,
