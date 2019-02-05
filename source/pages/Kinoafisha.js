@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 export const Kinoafisha = () => {
     const [ selectedFilter, setSetSelectedFilter ] = useState('upcoming');
+    const [ movies, setMovies ] = useState([]);
 
     return (
         <>
